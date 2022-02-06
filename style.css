@@ -1,0 +1,142 @@
+.header-logo {
+    max-width: 277px;
+}
+.header-nav {
+    max-width: 830px;
+}
+.nav-search{
+    width: 375px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.nft-image {
+    width: 30px;
+    height: 30px;
+}
+.arama-image {
+    width: 20px;
+    height: 20px;
+}
+.kesfet-image {
+    width: 320px;
+    height: 320px;
+    margin-right: 20px;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px grey;
+}
+.kesfet-row1 {
+    flex-wrap: nowrap !important; 
+    overflow: auto; 
+}
+.kesfet-row1::-webkit-scrollbar {
+    display: none;
+}
+.nft-list {
+    list-style-type: none;
+  }
+.nft-list img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+}
+.nft-list p {
+    margin-bottom: 0;
+}
+.w-55 {
+    width: 55%;
+}
+.koleksiyon-image-wrapper {
+    flex-wrap: wrap;
+}
+.koleksiyon-image-wrapper>div>div>img {
+    width: 237px;
+    height: 162px;
+}
+p.position-absolute {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+.koleksiyon-alt {
+    flex-wrap: nowrap !important; 
+    overflow: auto; 
+}
+.koleksiyon-alt::-webkit-scrollbar {
+    display: none;
+}
+.koleksiyon-image {
+    width: 237;
+    height: 162px;
+    margin-right: 20px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.satis-row {
+    flex-wrap: nowrap !important; 
+    overflow: auto; 
+}
+.satis-img {
+    width: 255px;
+    height: 160px;
+    padding: 10px;
+}
+.satista-olanlar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0px;
+    width: 255px;
+    height: 420px;
+    margin-left: 20px;
+    margin-bottom: 20px
+}
+.koleksiyon-image-wrapper {
+    flex-wrap: wrap;
+}
+.satis-row::-webkit-scrollbar {
+    display: none;
+}
+.satis-body {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-row {
+    max-width: 975px;
+    margin: auto;
+}
+
+.collection-image{
+    max-width: 237px;
+    max-height: 162px;
+}
+@media (max-width:1200px) {
+    .collection-resp{
+        justify-content: space-around;
+        margin: 0;
+    }
+}
+.header-resp{
+    justify-content: space-around;
+}
+@media (max-width:992px) {
+    .header-resp{
+        justify-content: start !important;
+        margin: 0 !important;
+    }
+}
+.odeme-yontem {
+    width: 48px;
+    height: 30px;
+}
