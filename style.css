@@ -88,7 +88,7 @@ p.position-absolute {
     height: 162px;
     margin-bottom: 10px;
     margin-right: 20px;
-    box-shadow: 15px 20px 15px 0px rgb(204, 204, 204);
+    box-shadow: 15px 20px 20px 0px rgb(204, 204, 204);
 }
 .fs-10 {
     font-size: 10px;
@@ -148,6 +148,7 @@ p.position-absolute {
 }
 .header-resp{
     justify-content: space-around;
+    font-size: 18px;
 }
 @media (max-width:992px) {
     .header-resp{
@@ -158,4 +159,7 @@ p.position-absolute {
 .odeme-yontem {
     width: 48px;
     height: 30px;
+}
+.exception {
+    box-shadow: none !important;
 }
