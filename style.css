@@ -165,9 +165,10 @@ p.position-absolute {
 .collection-image{
     max-width: 237px;
     max-height: 162px;
-    margin-top: -260px;
+    margin-top: -197px;
 }
 .collection-resp {
+    display: flex !important;
     justify-content: space-between;
 }
 @media (max-width:1200px) {
