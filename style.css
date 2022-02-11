@@ -30,18 +30,15 @@ textarea:focus, input:focus{
     width: 30px;
     height: 30px;
 }
-.arama-image {
-    width: 20px;
-    height: 20px;
-}
-.kesfet-image1 {
+
+.kesfet-image-abs {
     width: 320px;
     height: 320px;
     margin-right: 20px;
     border-radius: 5%;
     margin-top: -325px;
 }
-.kesfetBg1 {
+.kesfet-blurred-image {
         width: 320px;
         height: 320px;
         filter: blur(10px);
