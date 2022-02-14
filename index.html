@@ -42,8 +42,8 @@
                                 Kategori
                             </button>
                         </div>
-                        <div class="mx-lg-3 d-flex align-items-center header-resp"><i
-                                class="fas fa-shopping-cart text-danger mr-3 mt-1"></i>2 Ürün</div>
+                        <div  class="mx-lg-3 d-flex align-items-center header-resp"><i
+                                class="fas fa-shopping-cart text-danger mr-3 mt-1"></i> <span class="mr-1" id='cartDiv'>0</span> Ürün</div>
                         <div class="mx-lg-3 d-flex align-items-center header-resp"><i
                                 class="far fa-heart mr-2"></i>Favoriler</div>
                         <div class=" ml-lg-3 d-flex align-items-center header-resp"><i
@@ -115,7 +115,7 @@
                                             <p>$602.130.000</p>
                                         </div>
                                     </div>
-                                    <div class=" mt-3"><i class="far fa-heart mr-5 text-muted"></i></div>
+                                    <div class="mt-3"><i id='hearth-1' onclick="heartClicked(this)" class="far fa-heart mr-5 text-muted"></i></div>
                                 </div>
                             </li>
                             <li class="my-4">
@@ -128,7 +128,7 @@
                                             <p>$602.130.000</p>
                                         </div>
                                     </div>
-                                    <div class="mt-3"><i class="fas fa-heart text-warning mr-5"></i></div>
+                                    <div class="mt-3"><i id='hearth-2' onclick="heartClicked(this)" class="far fa-heart text-muted mr-5"></i></div>
                                 </div>
                             </li>
                             <li class="my-4">
@@ -141,7 +141,7 @@
                                             <p>$602.130.000</p>
                                         </div>
                                     </div>
-                                    <div class="mt-3"><i class="far fa-heart mr-5 text-muted"></i></div>
+                                    <div class="mt-3"><i id='hearth-3' onclick="heartClicked(this)" class="far fa-heart mr-5 text-muted"></i></div>
                                 </div>
                             </li>
                             <li class="my-4">
@@ -154,7 +154,7 @@
                                             <p>$602.130.000</p>
                                         </div>
                                     </div>
-                                    <div class="mt-3"><i class="fas fa-heart text-warning mr-5"></i></div>
+                                    <div class="mt-3"><i id='hearth-4' onclick="heartClicked(this)" class="far fa-heart text-muted mr-5"></i></div>
                                 </div>
                             </li>
                         </ul>
@@ -322,7 +322,7 @@
                         <div>
                             <img class="ml-5" src="images/stars.png" alt="stars">
                         </div>
-                        <div>
+                        <div onclick="addToCartOrRemove('urun-1')" >
                             <p class="d-inline">$384.4</p><i class="fas fa-shopping-cart ml-2 text-muted"></i>
                         </div>
                     </div>
@@ -343,8 +343,8 @@
                         <div>
                             <img class="ml-5" src="images/stars.png" alt="stars">
                         </div>
-                        <div>
-                            <p class="d-inline">$384.4</p><i class="fas fa-shopping-cart ml-2 text-muted"></i>
+                        <div onclick="addToCartOrRemove('urun-2')">
+                            <p class="d-inline">$384.4</p><i  class="fas fa-shopping-cart ml-2 text-muted"></i>
                         </div>
                     </div>
                 </div>
@@ -364,8 +364,8 @@
                         <div>
                             <img class="ml-5" src="images/stars.png" alt="stars">
                         </div>
-                        <div>
-                            <p class="d-inline">$384.4</p><i class="fas fa-shopping-cart ml-2 text-muted"></i>
+                        <div onclick="addToCartOrRemove('urun-3')">
+                            <p class="d-inline">$384.4</p><i  class="fas fa-shopping-cart ml-2 text-muted"></i>
                         </div>
                     </div>
                 </div>
@@ -385,8 +385,8 @@
                         <div>
                             <img class="ml-5" src="images/stars.png" alt="stars">
                         </div>
-                        <div>
-                            <p class="d-inline">$384.4</p><i class="fas fa-shopping-cart ml-2 text-muted"></i>
+                        <div onclick="addToCartOrRemove('urun-4')">
+                            <p class="d-inline">$384.4</p><i  class="fas fa-shopping-cart ml-2 text-muted"></i>
                         </div>
                     </div>
                 </div>
@@ -406,8 +406,8 @@
                         <div>
                             <img class="ml-5" src="images/stars.png" alt="stars">
                         </div>
-                        <div>
-                            <p class="d-inline">$384.4</p><i class="fas fa-shopping-cart ml-2 text-muted"></i>
+                        <div onclick="addToCartOrRemove('urun-5')">
+                            <p class="d-inline">$384.4</p><i  class="fas fa-shopping-cart ml-2 text-muted"></i>
                         </div>
                     </div>
                 </div>
@@ -667,6 +667,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="main.js"></script>
 
     <script type="text/javascript">
         $('.multiple-items').slick({
